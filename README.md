@@ -47,3 +47,20 @@ flask==0.11.1
 微信群：
 ![](image.jpg)
 QQ：934389697
+import nltk
+
+nltk.download('punkt')
+nltk.download('wordnet')
+
+def greet(message):
+  greetings = ["hi", "hello", "hey"]
+    if message.lower() in greetings:
+        return "Hi there!"
+          else:
+              return "I don't understand."
+
+              while True:
+                message = input("You: ")
+                  response = greet(message)
+                    print("AI:", response)
+                    
